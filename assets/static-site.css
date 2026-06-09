@@ -1,0 +1,72 @@
+:root {
+  --brand: #0f4c81;
+  --brand-dark: #073459;
+  --accent: #d6a33d;
+  --text: #1d2630;
+}
+
+html { scroll-behavior: smooth; }
+body { color: var(--text); background: #fff; }
+a { color: inherit; }
+img { max-width: 100%; height: auto; }
+
+.main { overflow-x: hidden; }
+.e_navigationA-6 .p_level1Box, .p_level1Box {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  list-style: none;
+}
+.p_navButton { cursor: pointer; }
+.static-menu-open .p_navContent { display: block !important; }
+.sideBar {
+  position: fixed;
+  right: 18px;
+  top: 45%;
+  z-index: 20;
+}
+.sideBar .side, .sideBar .side1 {
+  margin-bottom: 8px;
+  background: var(--brand-dark);
+  color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.18);
+}
+.sideBar a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 40px;
+  padding: 8px 10px;
+  text-decoration: none;
+}
+.qcodePic { display: none; position: absolute; right: 100%; top: 0; padding-right: 10px; }
+.side5:hover .qcodePic { display: block; }
+form.static-message-form button,
+form button,
+.e_button-6 {
+  cursor: pointer;
+}
+.static-form-tip {
+  margin-top: 12px;
+  padding: 10px 12px;
+  border-left: 4px solid var(--accent);
+  background: #fff8e8;
+  color: #463510;
+  font-size: 14px;
+}
+.static-generated-note {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .p_level1Box { display: block; }
+  .p_navContent { display: none; }
+  .sideBar { right: 8px; transform: scale(.86); transform-origin: right center; }
+}
+
+@media print {
+  .sideBar, .p_navButton { display: none !important; }
+}
+
+/* Static rebuild for 大连邦谊石墨材料有限公司. */
